@@ -196,7 +196,7 @@ Result:
         }
 
 
-### Category resources (/categories)
+## Category resources (/categories)
 
 
 List of all the categories
@@ -261,7 +261,7 @@ Result:
           ...
         ]
 
-### Collection resources (/collections)
+## Collection resources (/collections)
 
 List of all the collections
 
@@ -313,7 +313,7 @@ Result:
         ]
 
 
-### Product resources (/products)
+## Product resources (/products)
 
 List of all the products
 
