@@ -2,7 +2,7 @@
 # Boutine.com Public REST API
 
 
-## /users resources
+## User resources (/users)
 
 
 List of all the users
@@ -196,7 +196,7 @@ Result:
         }
 
 
-### /categories resources
+### Category resources (/categories)
 
 
 List of all the categories
@@ -261,7 +261,7 @@ Result:
           ...
         ]
 
-### /collections resources
+### Collection resources (/collections)
 
 List of all the collections
 
@@ -313,7 +313,7 @@ Result:
         ]
 
 
-### /products resources
+### Product resources (/products)
 
 List of all the products
 
