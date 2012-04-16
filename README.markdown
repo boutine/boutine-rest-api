@@ -27,7 +27,7 @@ Result:
 
 Register a new user
 
-POST `http://www.boutine.com/api/v1/users/new`
+POST `http://www.boutine.com/api/v1/users/`
 
 Parameters:
 
@@ -40,6 +40,7 @@ Sample:
           "last_name": <last name>
           "email": <email address>
           "username": <user name>
+          "password": <password>
         }
   
 
