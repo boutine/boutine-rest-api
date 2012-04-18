@@ -253,14 +253,26 @@ Result:
 
         [
           {
-            "product" : {
-              "id" : 147,
+            "product":{
+              "id":147,
               "title":"Tapi",
-              "description":"Wool cap sleeve princess cut dress."
+              "description":"Wool cap sleeve",
+              "product_images":
+                [
+                  {
+                    "product_image":{
+                      "normal":"https://..../normal.JPG?1323805109",
+                      "small":"https://.../small.JPG?1323805109",
+                      "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ]
             }
           },
           ...
         ]
+
 
 ## Collection resources (/collections)
 
@@ -280,6 +292,22 @@ Result:
           },
           ...
         ]
+
+
+POST `http://www.boutine.com/api/v1/collections/`
+
+
+Parameters:
+
+  collection: a JSON payload
+
+Sample:
+
+        {
+          "title": <title>
+        }
+  
+
 
 
 Details of a collection
