@@ -257,6 +257,8 @@ Result:
               "id":147,
               "title":"Tapi",
               "description":"Wool cap sleeve",
+              "price":360.0,
+              "category_id":2,
               "product_images":
                 [
                   {
@@ -333,9 +335,22 @@ Result:
         [
           {
             "product":{
-              "id":1157,
-              "title":"Vinyl Coat W/Geometrical Detailing",
-              "description":"Transparent, pink vinyl coat."
+              "id":147,
+              "title":"Tapi",
+              "description":"Wool cap sleeve",
+              "price":360.0,
+              "category_id":2,
+              "product_images":
+                [
+                  {
+                    "product_image":{
+                      "normal":"https://..../normal.JPG?1323805109",
+                      "small":"https://.../small.JPG?1323805109",
+                      "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ]
             }
           },
           ...
@@ -361,8 +376,22 @@ Result:
         [
           {
             "product":{
-              "id":200,
-              "title":"Twist back Tank"
+              "id":147,
+              "title":"Tapi",
+              "description":"Wool cap sleeve",
+              "price":360.0,
+              "category_id":2,
+              "product_images":
+                [
+                  {
+                    "product_image":{
+                      "normal":"https://..../normal.JPG?1323805109",
+                      "small":"https://.../small.JPG?1323805109",
+                      "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ]
             }
           },
           ...
@@ -378,13 +407,22 @@ Result:
 
         {
           "product":{
-            "id":208,
-            "title":"Aphrodite 56",
-            "price":114.0,
-            "description":"Hammered drop hoop wrapped with vessonite",
-            "category_id":39,
-            "designer_id":115,
-            "product_url":"http://www.boutine.com/products/aphrodite-56"
+            "id":147,
+            "title":"Tapi",
+            "description":"Wool cap sleeve",
+            "price":360.0,
+            "category_id":2,
+            "product_images":
+              [
+                {
+                  "product_image":{
+                    "normal":"https://..../normal.JPG?1323805109",
+                    "small":"https://.../small.JPG?1323805109",
+                    "square":"https://.../square.JPG?1323805109"
+                  }
+                },
+                ...
+              ]
+            }
           }
-        }
 
