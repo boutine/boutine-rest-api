@@ -111,9 +111,22 @@ Result:
         [
           {
             "product":{
-              "id":310,
-              "title":"Silver Flat Mod Ball Ring",
-              "description":"Handwoven around a sterling silver shape band.
+              "id":147,
+              "title":"Tapi",
+              "description":"Wool cap sleeve",
+              "price":360.0,
+              "category_id":2,
+              "product_images":
+                [
+                  {
+                    "product_image":{
+                      "normal":"https://..../normal.JPG?1323805109",
+                      "small":"https://.../small.JPG?1323805109",
+                      "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ]
             }
           },
           ...
