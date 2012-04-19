@@ -249,11 +249,22 @@ Result:
 
         [
           {
-            "category": {
-              "id" : 17,
-              "name" : "Necklaces",
-              "weight" : 3,
-              "size_group_name" : "small-medium-large"
+            "category":{
+              "id":1,
+              "name":"Clothing",
+              "weight":100,
+              "size_group_name":"",
+              "categories":
+                [
+                  {
+                    "category":{
+                      "id":2,
+                      "name":"Dresses",
+                      "weight":9
+                    }
+                  },
+                  ...
+                ]
             }
           },
           ...
@@ -271,16 +282,16 @@ Result:
             "name" : "Clothing",
             "weight" : 100,
             "size_group_name" : "",
-            "children": [
+            "categories": [
               {
-                "ancestry":"0/1",
-                "id":2,
-                "name":"Dresses",
-                "size_group_name":"small-medium-large",
-                "slug":"dresses",
-                "weight":9
+                "category":{
+                  "id":2,
+                  "name":"Dresses",
+                  "size_group_name":"small-medium-large",
+                  "weight":9
+                }
               },
-               ...
+              ...
             ]
           }
         }
