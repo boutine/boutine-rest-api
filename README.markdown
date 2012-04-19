@@ -116,13 +116,39 @@ Result:
               "description":"Wool cap sleeve",
               "price":360.0,
               "category_id":2,
-              "product_images":
+              "images":
                 [
                   {
-                    "product_image":{
+                    "image":{
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ],
+              "stylists":
+                [
+                  {
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha",
+                      "store_name":"Natasha's Store"
+                    }
+                  },
+                  ...
+                ],
+              "designer":{
+                "id":69,
+                "username":"zitara",
+                "store_name":"Zitara"
+              },
+              "sizes":
+                [
+                  {
+                    "size":{
+                      "quantity":-1,
+                      "size_code":"19-rings-sizes-6"
                     }
                   },
                   ...
@@ -131,6 +157,8 @@ Result:
           },
           ...
         ]
+
+
 
 
 User's collections
@@ -272,13 +300,39 @@ Result:
               "description":"Wool cap sleeve",
               "price":360.0,
               "category_id":2,
-              "product_images":
+              "images":
                 [
                   {
-                    "product_image":{
+                    "image":{
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ],
+              "stylists":
+                [
+                  {
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha",
+                      "store_name":"Natasha's Store"
+                    }
+                  },
+                  ...
+                ],
+              "designer":{
+                "id":69,
+                "username":"zitara",
+                "store_name":"Zitara"
+              },
+              "sizes":
+                [
+                  {
+                    "size":{
+                      "quantity":-1,
+                      "size_code":"19-rings-sizes-6"
                     }
                   },
                   ...
@@ -353,13 +407,39 @@ Result:
               "description":"Wool cap sleeve",
               "price":360.0,
               "category_id":2,
-              "product_images":
+              "images":
                 [
                   {
-                    "product_image":{
+                    "image":{
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ],
+              "stylists":
+                [
+                  {
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha",
+                      "store_name":"Natasha's Store"
+                    }
+                  },
+                  ...
+                ],
+              "designer":{
+                "id":69,
+                "username":"zitara",
+                "store_name":"Zitara"
+              },
+              "sizes":
+                [
+                  {
+                    "size":{
+                      "quantity":-1,
+                      "size_code":"19-rings-sizes-6"
                     }
                   },
                   ...
@@ -394,13 +474,39 @@ Result:
               "description":"Wool cap sleeve",
               "price":360.0,
               "category_id":2,
-              "product_images":
+              "images":
                 [
                   {
-                    "product_image":{
+                    "image":{
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ],
+              "stylists":
+                [
+                  {
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha",
+                      "store_name":"Natasha's Store"
+                    }
+                  },
+                  ...
+                ],
+              "designer":{
+                "id":69,
+                "username":"zitara",
+                "store_name":"Zitara"
+              },
+              "sizes":
+                [
+                  {
+                    "size":{
+                      "quantity":-1,
+                      "size_code":"19-rings-sizes-6"
                     }
                   },
                   ...
@@ -418,24 +524,49 @@ GET `http://www.boutine.com/api/v1/products/<ID>/`
 
 Result:
 
-        {
-          "product":{
-            "id":147,
-            "title":"Tapi",
-            "description":"Wool cap sleeve",
-            "price":360.0,
-            "category_id":2,
-            "product_images":
-              [
-                {
-                  "product_image":{
-                    "normal":"https://..../normal.JPG?1323805109",
-                    "small":"https://.../small.JPG?1323805109",
-                    "square":"https://.../square.JPG?1323805109"
-                  }
-                },
-                ...
-              ]
+          {
+            "product":{
+              "id":147,
+              "title":"Tapi",
+              "description":"Wool cap sleeve",
+              "price":360.0,
+              "category_id":2,
+              "images":
+                [
+                  {
+                    "image":{
+                      "normal":"https://..../normal.JPG?1323805109",
+                      "small":"https://.../small.JPG?1323805109",
+                      "square":"https://.../square.JPG?1323805109"
+                    }
+                  },
+                  ...
+                ],
+              "stylists":
+                [
+                  {
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha",
+                      "store_name":"Natasha's Store"
+                    }
+                  },
+                  ...
+                ],
+              "designer":{
+                "id":69,
+                "username":"zitara",
+                "store_name":"Zitara"
+              },
+              "sizes":
+                [
+                  {
+                    "size":{
+                      "quantity":-1,
+                      "size_code":"19-rings-sizes-6"
+                    }
+                  },
+                  ...
+                ]
             }
           }
-
