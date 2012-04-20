@@ -2,11 +2,11 @@
 
 ## Index
 
-* Users
-* Categories
-* Collections
-* Products
-* Cart
+* [Users](#user-resources-users)
+* [Categories](#category-resources-categories)
+* [Collections](#collection-resources-collections)
+* [Products](#product-resources-products)
+* [Cart](#cart-resources-cart)
 
 ## User resources (/users)
 
