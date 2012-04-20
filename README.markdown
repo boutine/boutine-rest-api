@@ -1,6 +1,12 @@
-
 # Boutine.com Public REST API
 
+## Index
+
+* Users
+* Categories
+* Collections
+* Products
+* Cart
 
 ## User resources (/users)
 
