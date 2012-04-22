@@ -4,6 +4,8 @@
 * GET `http://www.boutine.com/api/v1/products/`
 * GET `http://www.boutine.com/api/v1/products/<ID>/`
 
+---
+
 **List of all the products**
 
 GET `http://www.boutine.com/api/v1/products/`
@@ -68,6 +70,7 @@ Result:
           ...
         ]
 
+---
 
 **Details of a product**
 

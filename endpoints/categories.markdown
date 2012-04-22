@@ -5,6 +5,8 @@
 * GET `http://www.boutine.com/api/v1/categories/<ID>/`
 * GET `http://www.boutine.com/api/v1/categories/<ID>/products/`
 
+---
+
 **List of all the categories**
 
 GET `http://www.boutine.com/api/v1/categories/`
@@ -34,6 +36,8 @@ Result:
           ...
         ]
 
+---
+
 **Details of a category and its sub categories**
 
 GET `http://www.boutine.com/api/v1/categories/<ID>/`
@@ -60,6 +64,7 @@ Result:
           }
         }
 
+---
 
 **List of products in a category**
 

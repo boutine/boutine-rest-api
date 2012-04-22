@@ -6,6 +6,8 @@
 * GET `http://www.boutine.com/api/v1/collections/<ID>/`
 * GET `http://www.boutine.com/api/v1/collections/<ID>/products/`
 
+---
+
 **List of all the collections**
 
 GET `http://www.boutine.com/api/v1/collections/`
@@ -26,7 +28,6 @@ Result:
 
 POST `http://www.boutine.com/api/v1/collections/`
 
-
 Parameters:
 
   collection: a JSON payload
@@ -37,8 +38,7 @@ Sample:
           "title": <title>
         }
 
-
-
+---
 
 **Details of a collection**
 
@@ -53,6 +53,8 @@ Result:
             "collection_url":"http://www.boutine.com/collections/singing-in-the-rain"
           }
         }
+
+---
 
 **Collection's products**
 

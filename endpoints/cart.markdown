@@ -3,8 +3,10 @@
 ## Cart Index
 * GET 'http://www.boutine.com/api/v1/cart/'
 
-Details of the current items in cart. Requires user to be signed in
-through oauth.
+---
+
+**Details of the current items in cart.**
+*Requires user to be signed in through oauth.
 
 GET 'http://www.boutine.com/api/v1/cart/'
 
