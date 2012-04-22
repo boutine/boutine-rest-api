@@ -10,7 +10,9 @@
 * GET `http://www.boutime.com/api/v1/users/<ID>/collections/`
 * GET `http://www.boutine.com/api/v1/users/<ID>/following/`
 * GET `http://www.boutine.com/api/v1/users/me/`
+
 ---
+
 **List of all the users**
 
 GET `http://www.boutine.com/api/v1/users/`
