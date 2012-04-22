@@ -11,4 +11,7 @@
 * [Collections](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/collections.markdown)
 * [Products](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/products.markdown)
 * [Cart](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/cart.markdown)
-* [Authorization & Authentication](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/oauth.markdown)
+
+## Authorization and Authentication
+* [OAuth] (https://github.com/boutine/boutine-rest-api/blob/master/endpoints/oauth.markdown)
+

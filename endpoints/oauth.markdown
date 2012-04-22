@@ -7,16 +7,16 @@ For non-public data, like a user's cart and user information required for checko
 
 The details of the authorization process, or flow, for OAuth 2.0 is the following for 3-legged authentication: 
 
-1. When you create an application, you [register](http://www.boutine.com/oauth_clients/) it with Boutine. Boutine
+1. When you create an application, you need to [register](http://www.boutine.com/oauth_clients/) it with Boutine. Boutine
    then provides you with a Consumer key and secret.
 2. When your application needs to access Boutine API it asks for a token
-   using any standard OAuth library (depending on the technology/language of your application).
+   using any standard OAuth client library (depending on the technology/language of your application).
 
     The urls to be used in OAuth library are as follows:
 
-    Request token url: http://www.boutine.com/oauth/request_token
-    Authorize url: http://www.boutine.com/oauth/authorize
-    Access token url: http://www.boutine.com/oauth/access_token
+    - Request token url: `http://www.boutine.com/oauth/request_token`
+    - Authorize url: `http://www.boutine.com/oauth/authorize`
+    - Access token url: `http://www.boutine.com/oauth/access_token`
 
 3. Boutine displays an OAuth page to the user asking them to authorize
    your application to request some of their data
