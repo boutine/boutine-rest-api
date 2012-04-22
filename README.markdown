@@ -2,6 +2,37 @@
 # Boutine.com Public REST API
 
 
+## Authorization and Authentication
+
+Request to Boutine API must be authorized using OAuth 2.0. 
+
+
+For non-public data, like a user's cart and user information required for
+checkout, 3-legged authentication is used.
+
+The details of the authorization process, or flow, for OAuth 2.0 is the
+following for 3-legged authentication:
+
+1. When you create an application, you register it with Boutine. Boutine
+   then provides you with a Consumer key and secret.
+2. When your application needs to access Boutine API it asks for a token
+   using any standard OAuth library (depending on the technology/language of your application)
+3. Boutine displays an OAuth page to the user asking them to authorize
+   your application to request some of their data
+4. If the user approves the Boutine gives your application a short-lived
+   access token.
+5. Your application requests user data, attaching the access token to
+   the request.
+6. If Boutine determines that your request and token are valid, it
+   returns the requested data.
+
+For public data 2-legged authentication is to be used, in which your
+application using Boutine API is given authorization on behalf of a
+user. Only cosumer key and secret are used in that case for
+identification of your application to Boutine and no user sign in is
+requested in the flow.
+
+
 ## User resources (/users)
 
 
@@ -36,13 +67,18 @@ Parameters:
 Sample:
 
         {
-          "first_name": <first name>
-          "last_name": <last name>
-          "email": <email address>
-          "username": <user name>
-          "password": <password>
+          "user":{
+            "first_name": <first name>
+            "last_name": <last name>
+            "email": <email address>
+            "username": <user name>
+            "password": <password>
+          }
         }
-  
+ 
+Response:
+
+        HTTP/1.1 200 OK
 
 
 List of all the designers
@@ -315,6 +351,7 @@ Result:
                 [
                   {
                     "image":{
+                      "original":"https://..../original.JPG?1323805109",
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
@@ -422,6 +459,7 @@ Result:
                 [
                   {
                     "image":{
+                      "original":"https://..../original.JPG?1323805109",
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
@@ -489,6 +527,7 @@ Result:
                 [
                   {
                     "image":{
+                      "original":"https://..../original.JPG?1323805109",
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
@@ -546,6 +585,7 @@ Result:
                 [
                   {
                     "image":{
+                      "original":"https://..../original.JPG?1323805109",
                       "normal":"https://..../normal.JPG?1323805109",
                       "small":"https://.../small.JPG?1323805109",
                       "square":"https://.../square.JPG?1323805109"
@@ -585,22 +625,74 @@ Result:
 ## Cart resources (/cart)
 
 Details of the current items in cart. Requires user to be signed in
-through oauth.
+through 3-legged OAuth.
 
 GET `http://www.boutine.com/api/v1/cart/`
 
         {
           "cart":{
-            "id":91510,
+            "id":91534,
             "items":
               [
-                "item": {
-                  "product_id": 47,
-                  "stylist_id": 42,
-                  "quantity": 1,
-                  "shipping_price":10.0
-                },
-                ...
+                {
+                  "item":{
+                    "id":800,
+                    "shipping_price":0.0,
+                    "quantity":1,
+                    "designer_id":69,
+                    "unit_price":"98.0",
+                    "unit_shipping":5.0,
+                    "size_code":"small",
+                    "product":{
+                      "id":144,
+                      "category_id":19,
+                      "image":{
+                        "normal":"https://.../normal.png?1332186019"
+                      }
+                    },
+                    "stylist":{
+                      "id":158,
+                      "username":"natasha"
+                    }
+                  }
+                }
               ]
+           }
+        }
+
+Add item to cart. Requires user to be signed in
+through 3-legged OAuth. In case a product is already in the cart, its
+quantity is incremented.
+
+
+POST `http://www.boutine.com/api/v1/cart/item/`
+
+
+Example item:
+
+        {
+          "item":{
+            "product_id":144, 
+            "quantity":1,
+            "stylist_id":42,
+            "size_code":"small",
+            "color_id":123
           }
         }
+
+Response:
+
+        HTTP/1.1 200 OK
+
+
+Remove item from cart. Requires user to be signed in
+through 3-legged OAuth.
+
+
+DELETE `http://www.boutine.com/api/v1/cart/item/<ID>`
+
+
+Response:
+
+        HTTP/1.1 200 OK
+
