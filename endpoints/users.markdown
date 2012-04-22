@@ -10,7 +10,7 @@
 * GET `http://www.boutime.com/api/v1/users/<ID>/collections/`
 * GET `http://www.boutine.com/api/v1/users/<ID>/following/`
 * GET `http://www.boutine.com/api/v1/users/me/`
-
+---
 **List of all the users**
 
 GET `http://www.boutine.com/api/v1/users/`
@@ -29,8 +29,7 @@ Result:
           },
           ...
         ]
-
-
+---
 **Register a new user**
 
 POST `http://www.boutine.com/api/v1/users/`
@@ -49,8 +48,7 @@ Sample:
           "password": <password>
         }
 
-
-
+---
 **List of all the designers**
 
 GET `http://www.boutine.com/api/v1/users/designers/`
@@ -70,7 +68,7 @@ Result:
           ...
         ]
 
-
+---
 **List of all the stylists**
 
 GET `http://www.boutine.com/api/v1/users/stylists/`
@@ -90,7 +88,7 @@ Result:
           ...
         ]
 
-
+---
 **Details of a user**
 
 GET `http://www.boutine.com/api/v1/users/<ID>/`
@@ -107,7 +105,7 @@ Result:
           }
         }
 
-
+---
 **User's shop**
 
 GET `http://www.boutine.com/api/v1/users/<ID>/store/`
@@ -164,9 +162,7 @@ Result:
           ...
         ]
 
-
-
-
+---
 **User's collections**
 
 GET `http://www.boutime.com/api/v1/users/<ID>/collections/`
@@ -184,7 +180,7 @@ Result:
           ...
         ]
 
-
+---
 **User's followers**
 
 GET `http://www.boutine.com/api/v1/users/<ID>/followers/`
@@ -204,7 +200,7 @@ Result:
           ...
         ]
 
-
+---
 **Users following a user**
 
 GET `http://www.boutine.com/api/v1/users/<ID>/following/`
@@ -225,7 +221,7 @@ Result:
         ]
 
 
-
+---
 **Details of current user.**
 *This requires that a user is signed in through OAuth.*
 
