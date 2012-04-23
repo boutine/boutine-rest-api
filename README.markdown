@@ -13,5 +13,8 @@
 * [Cart](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/cart.markdown)
 
 ## Authorization and Authentication
-* [OAuth] (https://github.com/boutine/boutine-rest-api/blob/master/endpoints/oauth.markdown)
+* [OAuth](https://github.com/boutine/boutine-rest-api/blob/master/oauth.markdown)
+
+## Rate Limiting
+* [Limits](https://github.com/boutine/boutine-rest-api/blob/master/rate_limits.markdown)
 

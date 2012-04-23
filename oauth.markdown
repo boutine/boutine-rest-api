@@ -12,10 +12,11 @@ The details of the authorization process, or flow, for OAuth 2.0 is the followin
 2. When your application needs to access Boutine API it asks for a token
    using any standard OAuth client library (depending on the technology/language of your application).
 
-    The urls to be used in OAuth library are as follows:
+    The urls to be used are as follows:
 
     - Request token url: `http://www.boutine.com/oauth/request_token`
-    - Authorize url: `http://www.boutine.com/oauth/authorize`
+    - Authorize url: `http://www.boutine.com/oauth/authorize` or
+      `http://www.boutine.com/oauth/authenticate`
     - Access token url: `http://www.boutine.com/oauth/access_token`
 
 3. Boutine displays an OAuth page to the user asking them to authorize
