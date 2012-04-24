@@ -1,9 +1,19 @@
 # Rate limits
 
-The default rate limit for calls to the REST API varies depending on the authorization method being used and whether the endpoint being called return public data or not.
+The default rate limit for calls to the REST API are measured against the consumer key (client application identifier).
 
-1. Public data calls are permitted 100 requests per hour.
+One client application can make 200 requests to the REST APIs of Boutine in 1 hour.
 
-2. Non public data calls are permitted 200 requests per hour.
+Whenever an API is accessed the response header contains X-RateLimit-Limit and X-RateLimit-Remaining information:
 
-These are measured against the consumer key (client application identifier) being used for the call.
+HTTP/1.1 200 OK
+X-RateLimit-Limit: 200
+X-RateLimit-Remaining: 199
+
+
+If you exceed the 200 API calls in 1 hour then you get the following response:
+
+HTTP/1.1 403 Forbidden
+X-RateLimit-Limit: 200
+X-RateLimit-Remaining: 0
+
