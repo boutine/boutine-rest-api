@@ -28,3 +28,6 @@ The details of the authorization process, or flow, for OAuth 2.0 is the followin
    returns the requested data.
 
 For public data [2-legged](http://oauth.googlecode.com/svn/spec/ext/consumer_request/1.0/drafts/2/spec.html) authentication is to be used, in which your application using Boutine API is given authorization instead of being given on behalf of a user. Only consumer key and secret are used in that case for identification of your application to Boutine and no user sign in is requested in the flow.
+
+To revoke a token (for 3-legged oauth only), a POST request is to be made to `http://www.boutine.com/oauth/revoke` with access\_token as a parameter.
+

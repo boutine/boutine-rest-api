@@ -10,6 +10,7 @@
 * GET `http://www.boutime.com/api/v1/users/<ID>/collections/`
 * GET `http://www.boutine.com/api/v1/users/<ID>/following/`
 * GET `http://www.boutine.com/api/v1/users/me/`
+* POST `http://www.boutine.com/api/v1/user/forgot_password/`
 
 ---
 
@@ -247,4 +248,29 @@ Result:
             "store_url":"http://localhost:3000/users/zitara/store"
           }
         }
+
+
+---
+**Reset password of a user.**
+*Email is sent to the user with his resetted password.*
+
+POST `http://www.boutine.com/api/v1/user/forgot_password/`
+
+Parameters:
+
+  user: a JSON payload
+
+Sample:
+
+        {
+          "user":{
+            "email": <email address>            
+          }
+        }
+ 
+Response:
+
+        HTTP/1.1 200 OK
+
+
 
