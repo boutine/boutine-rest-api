@@ -133,10 +133,26 @@ Result:
                 [
                   {
                     "image":{
-                      "original":"https://..../original.JPG?1323805109",
-                      "normal":"https://..../normal.JPG?1323805109",
-                      "small":"https://.../small.JPG?1323805109",
-                      "square":"https://.../square.JPG?1323805109"
+                      "original":{
+                        "url":"https://.../uploaded_images/3978/original.jpg?1332358109",
+                        "height":345,
+                        "width":567
+                      },
+                      "normal":{
+                        "url":"https://.../uploaded_images/3978/normal.jpg?1332358109",
+                        "height":420,
+                        "width":560
+                      },
+                      "small":{
+                        "url":"https://.../uploaded_images/3978/small.jpg?1332358109",
+                        "height":150,
+                        "width":110
+                      },
+                      "square":{
+                        "url":"https://.../uploaded_images/3978/square.jpg?1332358109",
+                        "height":50,
+                        "width":50
+                      }
                     }
                   },
                   ...
