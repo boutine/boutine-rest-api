@@ -11,8 +11,9 @@
 * [Collections](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/collections.markdown)
 * [Products](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/products.markdown)
 * [Cart](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/cart.markdown)
+* [Checkout Dialog](https://github.com/boutine/boutine-rest-api/blob/master/endpoints/checkout.markdown)
 
-## Authorization and Authentication
+## Authentication
 * [OAuth](https://github.com/boutine/boutine-rest-api/blob/master/oauth.markdown)
 
 ## Rate Limiting

@@ -1,11 +1,11 @@
 # Authroization and Authentication
 
 
-Request to Boutine API must be authorized using [OAuth](http://oauth.net/) (2.0 recommended). 
+Request to Boutine API must be authorized using [OAuth](http://oauth.net/). 
 
 For non-public data, like a user's cart and user information required for checkout, 3-legged authentication is used.
 
-The details of the authorization process, or flow, for OAuth 2.0 is the following for 3-legged authentication: 
+The details of the authorization process, or flow, for OAuth is following for 3-legged authentication: 
 
 1. When you create an application, you need to [register](http://www.boutine.com/oauth_clients/) it with Boutine. Boutine
    then provides you with a Consumer key and secret.
