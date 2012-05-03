@@ -103,6 +103,7 @@ Parameters:
   A product JSON payload
 
 Sample:
+
         {
           "product":{
             "title":"Product1",
