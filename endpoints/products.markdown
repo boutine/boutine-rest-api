@@ -2,6 +2,10 @@
 
 ## Products Index
 * GET `http://www.boutine.com/api/v1/products/`
+* POST `http://www.boutine.com/api/v1/products/`
+* DELETE `http://www.boutine.com/api/v1/products/<ID>`
+* POST `http://www.boutine.com/api/v1/products/<ID>/images/`
+* DELETE `http://www.boutine.com/api/v1/products/<ID>/images/<IMAGE_ID>`
 * GET `http://www.boutine.com/api/v1/products/featured/`
 * GET `http://www.boutine.com/api/v1/products/<ID>/`
 
@@ -87,6 +91,59 @@ Result:
           },
           ...
         ]
+
+
+---
+
+**Add a product**
+*This requires that the user is signed in. The user of the product is the one who is signed in.
+POST `http://www.boutine.com/api/v1/products/`
+
+Parameters:
+  A product JSON payload
+
+Sample:
+        {
+          "product":{
+            "title":"Product1",
+            "description":"Great product",
+            "price": 100.0,
+            "in_stock": true,
+            "live": true,
+            "weight": 1,
+            "category_id": 123
+          }
+        }
+
+---
+
+**Remove a product**
+*This requires that the user is signed in. Only products of signed in user can be deleted.
+
+DELETE `http://www.boutine.com/api/v1/products/<ID>/`
+  
+Response:
+        HTTP/1.1 200 OK
+
+---
+
+**Add image to a product**
+*This requires that the user is signed in. Image can added only to a product of the signed in user.
+POST `http://www.boutine.com/api/v1/products/<ID>/images/`
+
+Parameters:
+  A form can be submitted with "image" as the name of file field.
+
+
+---
+
+**Remove image of a product**
+*This requires that the user is signed in. Only images of products of signed in user can be removed.
+
+DELETE `http://www.boutine.com/api/v1/products/<ID>/images/<IMAGE_ID>`
+
+Response:
+        HTTP/1.1 200 OK
 
 ---
 

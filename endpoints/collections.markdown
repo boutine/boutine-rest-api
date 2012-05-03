@@ -3,6 +3,8 @@
 ## Collection Index
 * GET `http://www.boutine.com/api/v1/collections/`
 * POST `http://www.boutine.com/api/v1/collections/`
+* DELETE `http://www.boutine.com/api/v1/collections/<ID>/`
+* GET `http://www.boutine.com/api/v1/collections/featured/`
 * GET `http://www.boutine.com/api/v1/collections/<ID>/`
 * GET `http://www.boutine.com/api/v1/collections/<ID>/products/`
 
@@ -12,7 +14,7 @@
 
 GET `http://www.boutine.com/api/v1/collections/`
 
-Result:
+Response:
 
         [
           {
@@ -25,6 +27,10 @@ Result:
           ...
         ]
 
+---
+
+**Create a collection of signed in user
+*Requires that a user is signed in through OAuth.
 
 POST `http://www.boutine.com/api/v1/collections/`
 
@@ -35,8 +41,40 @@ Parameters:
 Sample:
 
         {
-          "title": <title>
+          "title": <title>,
+          "description", <description>,
+          "live", true/false
         }
+
+---
+
+**Remove collection of signed in user
+*Requires that a user is signed in through OAuth.
+
+DELETE `http://www.boutine.com/api/v1/collections/<ID>/`
+
+Response:
+        HTTP/1.1 200 OK
+
+
+---
+
+**List of all featured collections**
+
+GET `http://www.boutine.com/api/v1/collections/featured/`
+
+Response:
+
+        [
+          {
+            "collection":{
+              "id":127,
+              "title":"Singing In The Rain",
+              "description":"Let it rain, let it pour!"
+            }
+          },
+          ...
+        ]
 
 ---
 
@@ -44,7 +82,7 @@ Sample:
 
 GET `http://www.boutine.com/api/v1/collections/<ID>/`
 
-Result:
+Response:
 
         {
           "collection":{
@@ -60,7 +98,7 @@ Result:
 
 GET `http://www.boutine.com/api/v1/collections/<ID>/products/`
 
-Result:
+Response:
 
         [
           {

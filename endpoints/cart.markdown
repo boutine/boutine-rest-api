@@ -46,13 +46,13 @@ GET `http://www.boutine.com/api/v1/cart/`
 *Requires user to be signed in through 3-legged OAuth. In case a product is already in the cart, its quantity is incremented.
 
 
-POST `http://www.boutine.com/api/v1/cart/item/`
+POST `http://www.boutine.com/api/v1/cart/line_items/`
 
 
 Example item:
 
         {
-          "item":{
+          "line_item":{
             "product_id":144, 
             "quantity":1,
             "stylist_id":42,
@@ -62,15 +62,15 @@ Example item:
         }
 
 Response:
-
         HTTP/1.1 200 OK
+        
 
 
 **Remove item from cart.**
 *Requires user to be signed in through 3-legged OAuth.
 
 
-DELETE `http://www.boutine.com/api/v1/cart/item/<ID>`
+DELETE `http://www.boutine.com/api/v1/cart/line_items/<ID>`
 
 
 Response:

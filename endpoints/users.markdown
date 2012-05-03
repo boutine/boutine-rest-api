@@ -10,7 +10,7 @@
 * GET `http://www.boutime.com/api/v1/users/<ID>/collections/`
 * GET `http://www.boutine.com/api/v1/users/<ID>/following/`
 * GET `http://www.boutine.com/api/v1/users/me/`
-* POST `http://www.boutine.com/api/v1/user/forgot_password/`
+* POST `http://www.boutine.com/api/v1/users/forgot_password/`
 
 ---
 
