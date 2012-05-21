@@ -1,4 +1,4 @@
-# Authroization and Authentication
+# Authorization and Authentication
 
 
 Request to Boutine API must be authorized using [OAuth](http://oauth.net/). 
