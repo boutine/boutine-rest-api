@@ -51,15 +51,20 @@ POST `http://www.boutine.com/api/v1/cart/line_items/`
 
 Example item:
 
-        {
-          "line_item":{
-            "product_id":144, 
-            "quantity":1,
-            "stylist_id":42,
-            "size_code":"small",
-            "color_id":123
-          }
+  {
+    "items":{
+      "0":{
+        "item":{
+          "product_id":"1",
+          "quantity"=>"1",
+          "stylist_id"=>"6",
+          "size_code"=>"small",
+          "color_id"=>"2"
         }
+      },
+      ...
+    }
+  }
 
 Response:
         HTTP/1.1 200 OK
