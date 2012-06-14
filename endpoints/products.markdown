@@ -56,9 +56,19 @@ Result:
                         "url":"https://.../uploaded_images/3978/square.jpg?1332358109",
                         "height":50,
                         "width":50
-                      }
+                      },
+                      "ipad": {
+                        "url":"https://.../uploaded_images/3978/ipad.jpg?1332358109",
+                        "height":660,
+                        "width":440
+                      },
+                      "ipad_lowres": {
+                        "url":"https://.../uploaded_images/3978/ipad_lowres.jpg?1332358109",
+                        "height":330,
+                        "width":220
+                      } 
                     }
-                  },
+                  }
                   ...
                 ],
               "stylists":
