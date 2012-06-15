@@ -51,25 +51,45 @@ POST `http://www.boutine.com/api/v1/cart/line_items/`
 
 Example item:
 
-  {
-    "items":{
-      "0":{
-        "item":{
-          "product_id":"1",
-          "quantity"=>"1",
-          "stylist_id"=>"6",
-          "size_code"=>"small",
-          "color_id"=>"2"
+        {
+          "item":{
+            "product_id":"1",
+            "quantity"=>"1",
+            "stylist_id"=>"6",
+            "size_code"=>"small",
+            "color_id"=>"2"
+          }
         }
-      },
-      ...
-    }
-  }
 
 Response:
         HTTP/1.1 200 OK
         
+**Add items to cart in bulk.**
+*Requires user to be signed in through 3-legged OAuth. In case a product is already in the cart, its quantity is incremented.
 
+
+POST `http://www.boutine.com/api/v1/cart/line_items/bulk_create/`
+
+
+Example item:
+
+        {
+          "items":{
+            "0":{
+              "item":{
+                "product_id":"1",
+                "quantity"=>"1",
+                "stylist_id"=>"6",
+                "size_code"=>"small",
+                "color_id"=>"2"
+              }
+            },
+            ...
+          }
+        }
+
+Response:
+        HTTP/1.1 200 OK
 
 **Remove item from cart.**
 *Requires user to be signed in through 3-legged OAuth.
